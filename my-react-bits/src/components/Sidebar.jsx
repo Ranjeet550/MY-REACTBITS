@@ -8,6 +8,7 @@ import {
   ThunderboltOutlined,
   BlockOutlined,
   StarFilled,
+  FireOutlined,
 } from "@ant-design/icons";
 
 const { Text } = Typography;
@@ -22,6 +23,7 @@ export const Sidebar = ({ pages, currentPage, onPageChange }) => {
     Forms: { icon: <FormOutlined />, color: '#f59e0b' },
     Animations: { icon: <ThunderboltOutlined />, color: '#10b981' },
     Components: { icon: <BlockOutlined />, color: '#8b5cf6' },
+    Trending: { icon: <FireOutlined />, color: '#ec4899' },
   };
 
   // Group pages by category
@@ -33,6 +35,7 @@ export const Sidebar = ({ pages, currentPage, onPageChange }) => {
     Forms: pages.filter((p) => p.category === "Forms"),
     Animations: pages.filter((p) => p.category === "Animations"),
     Components: pages.filter((p) => p.category === "Components"),
+    Trending: pages.filter((p) => p.category === "Trending"),
   };
 
   // Create menu items with icons

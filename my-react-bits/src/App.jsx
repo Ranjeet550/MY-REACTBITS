@@ -5,12 +5,27 @@ import { Sidebar } from "./components/Sidebar";
 import { HomePage } from "./pages/HomePage";
 import { ButtonPage } from "./pages/ButtonPage";
 import { CardPage } from "./pages/CardPage";
+import { AccordionPage } from "./pages/AccordionPage";
+import { TabsPage } from "./pages/TabsPage";
+import { DividerPage } from "./pages/DividerPage";
 import { AnimatedButtonsPage } from "./pages/AnimatedButtonsPage";
 import { AnimatedCardsPage } from "./pages/AnimatedCardsPage";
+import { StatsCardPage } from "./pages/StatsCardPage";
 import { LoadersPage } from "./pages/LoadersPage";
+import { AlertPage } from "./pages/AlertPage";
 import { InputsPage } from "./pages/InputsPage";
+import { SwitchPage } from "./pages/SwitchPage";
+import { CheckboxPage } from "./pages/CheckboxPage";
+import { RadioPage } from "./pages/RadioPage";
+import { SliderPage } from "./pages/SliderPage";
 import { TextAnimationsPage } from "./pages/TextAnimationsPage";
 import { UIComponentsPage } from "./pages/UIComponentsPage";
+import { ChipPage } from "./pages/ChipPage";
+import { BreadcrumbPage } from "./pages/BreadcrumbPage";
+import { DropdownPage } from "./pages/DropdownPage";
+import { PaginationPage } from "./pages/PaginationPage";
+import { TimelinePage } from "./pages/TimelinePage";
+import { ModernComponentsPage } from "./pages/ModernComponentsPage";
 
 const { Header, Sider, Content } = Layout;
 const { Text } = Typography;
@@ -19,12 +34,27 @@ const pages = [
   { id: "home", label: "Home", category: "Navigation" },
   { id: "button", label: "Button", category: "Basics" },
   { id: "card", label: "Card", category: "Basics" },
+  { id: "accordion", label: "Accordion", category: "Basics" },
+  { id: "tabs", label: "Tabs", category: "Basics" },
+  { id: "divider", label: "Divider", category: "Basics" },
   { id: "animated-buttons", label: "Animated Buttons", category: "Buttons" },
   { id: "animated-cards", label: "Animated Cards", category: "Cards" },
+  { id: "stats-card", label: "Stats Card", category: "Cards" },
   { id: "loaders", label: "Loaders", category: "Feedback" },
+  { id: "alert", label: "Alert", category: "Feedback" },
   { id: "inputs", label: "Inputs", category: "Forms" },
+  { id: "switch", label: "Switch", category: "Forms" },
+  { id: "checkbox", label: "Checkbox", category: "Forms" },
+  { id: "radio", label: "Radio", category: "Forms" },
+  { id: "slider", label: "Slider", category: "Forms" },
   { id: "text-animations", label: "Text Animations", category: "Animations" },
   { id: "ui-components", label: "UI Components", category: "Components" },
+  { id: "chip", label: "Chip", category: "Components" },
+  { id: "breadcrumb", label: "Breadcrumb", category: "Components" },
+  { id: "dropdown", label: "Dropdown", category: "Components" },
+  { id: "pagination", label: "Pagination", category: "Components" },
+  { id: "timeline", label: "Timeline", category: "Components" },
+  { id: "modern-components", label: "Modern Components", category: "Trending" },
 ];
 
 export default function App() {
@@ -90,12 +120,27 @@ export default function App() {
             {currentPage === "home" && <HomePage onNavigate={setCurrentPage} />}
             {currentPage === "button" && <ButtonPage />}
             {currentPage === "card" && <CardPage />}
+            {currentPage === "accordion" && <AccordionPage />}
+            {currentPage === "tabs" && <TabsPage />}
+            {currentPage === "divider" && <DividerPage />}
             {currentPage === "animated-buttons" && <AnimatedButtonsPage />}
             {currentPage === "animated-cards" && <AnimatedCardsPage />}
+            {currentPage === "stats-card" && <StatsCardPage />}
             {currentPage === "loaders" && <LoadersPage />}
+            {currentPage === "alert" && <AlertPage />}
             {currentPage === "inputs" && <InputsPage />}
+            {currentPage === "switch" && <SwitchPage />}
+            {currentPage === "checkbox" && <CheckboxPage />}
+            {currentPage === "radio" && <RadioPage />}
+            {currentPage === "slider" && <SliderPage />}
             {currentPage === "text-animations" && <TextAnimationsPage />}
             {currentPage === "ui-components" && <UIComponentsPage />}
+            {currentPage === "chip" && <ChipPage />}
+            {currentPage === "breadcrumb" && <BreadcrumbPage />}
+            {currentPage === "dropdown" && <DropdownPage />}
+            {currentPage === "pagination" && <PaginationPage />}
+            {currentPage === "timeline" && <TimelinePage />}
+            {currentPage === "modern-components" && <ModernComponentsPage />}
           </Content>
         </Layout>
       </Layout>

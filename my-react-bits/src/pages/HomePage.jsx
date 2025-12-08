@@ -69,6 +69,13 @@ export const HomePage = ({ onNavigate }) => {
       color: "#8b5cf6",
       category: "ui-components",
     },
+    {
+      icon: <FireOutlined />,
+      title: "Modern Components",
+      description: "Trending UI components with glassmorphism, magnetic effects, and more",
+      color: "#ec4899",
+      category: "modern-components",
+    },
   ];
 
   return (
