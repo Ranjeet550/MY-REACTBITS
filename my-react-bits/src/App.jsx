@@ -26,6 +26,19 @@ import { DropdownPage } from "./pages/DropdownPage";
 import { PaginationPage } from "./pages/PaginationPage";
 import { TimelinePage } from "./pages/TimelinePage";
 import { ModernComponentsPage } from "./pages/ModernComponentsPage";
+import { CarouselPage } from "./pages/CarouselPage";
+import { DatePickerPage } from "./pages/DatePickerPage";
+import { FileUploadPage } from "./pages/FileUploadPage";
+import { RatingProgressPage } from "./pages/RatingProgressPage";
+import { ColorPickerPage } from "./pages/ColorPickerPage";
+import { ToggleStepperPage } from "./pages/ToggleStepperPage";
+import { TrendingComponentsPage } from "./pages/TrendingComponentsPage";
+import { AnimationComponentsPage } from "./pages/AnimationComponentsPage";
+import { AttractiveComponentsPage } from "./pages/AttractiveComponentsPage";
+import { NewComponentsPage } from "./pages/NewComponentsPage";
+import { CurvedLoopPage } from "./pages/CurvedLoopPage";
+import { FallingTextPage } from "./pages/FallingTextPage";
+import { ThreadsPage } from "./pages/ThreadsPage";
 
 const { Header, Sider, Content } = Layout;
 const { Text } = Typography;
@@ -55,6 +68,19 @@ const pages = [
   { id: "pagination", label: "Pagination", category: "Components" },
   { id: "timeline", label: "Timeline", category: "Components" },
   { id: "modern-components", label: "Modern Components", category: "Trending" },
+  { id: "carousel", label: "Carousel", category: "Media" },
+  { id: "date-picker", label: "DatePicker", category: "Forms" },
+  { id: "file-upload", label: "FileUpload", category: "Forms" },
+  { id: "rating-progress", label: "Rating & Progress", category: "Feedback" },
+  { id: "color-picker", label: "ColorPicker", category: "Tools" },
+  { id: "toggle-stepper", label: "Toggle & Stepper", category: "Forms" },
+  { id: "trending-components", label: "Trending Components", category: "Trending" },
+  { id: "animation-components", label: "Animation Components", category: "Animations" },
+  { id: "attractive-components", label: "Attractive Components", category: "UX" },
+  { id: "new-components", label: "New Components", category: "New" },
+  { id: "curved-loop", label: "Curved Loop", category: "Animations" },
+  { id: "falling-text", label: "Falling Text", category: "Animations" },
+  { id: "threads", label: "Threads", category: "Backgrounds" },
 ];
 
 export default function App() {
@@ -141,6 +167,19 @@ export default function App() {
             {currentPage === "pagination" && <PaginationPage />}
             {currentPage === "timeline" && <TimelinePage />}
             {currentPage === "modern-components" && <ModernComponentsPage />}
+            {currentPage === "carousel" && <CarouselPage />}
+            {currentPage === "date-picker" && <DatePickerPage />}
+            {currentPage === "file-upload" && <FileUploadPage />}
+            {currentPage === "rating-progress" && <RatingProgressPage />}
+            {currentPage === "color-picker" && <ColorPickerPage />}
+            {currentPage === "toggle-stepper" && <ToggleStepperPage />}
+            {currentPage === "trending-components" && <TrendingComponentsPage />}
+            {currentPage === "animation-components" && <AnimationComponentsPage />}
+            {currentPage === "attractive-components" && <AttractiveComponentsPage />}
+            {currentPage === "new-components" && <NewComponentsPage />}
+            {currentPage === "curved-loop" && <CurvedLoopPage />}
+            {currentPage === "falling-text" && <FallingTextPage />}
+            {currentPage === "threads" && <ThreadsPage />}
           </Content>
         </Layout>
       </Layout>
